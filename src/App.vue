@@ -1,6 +1,6 @@
 <template>
   <div>
-    <SideBar/>
+    <NavBar/>
     <RouterView />
   </div>
   <!-- <header>
