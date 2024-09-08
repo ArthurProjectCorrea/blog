@@ -4,6 +4,7 @@ export default {
   theme: {
     fontFamily: {
       suse: ["SUSE", "system-ui"],
+      ubuntu: ["Ubuntu", "system-ui"],
     },
     extend: {},
   },
