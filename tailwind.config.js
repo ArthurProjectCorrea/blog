@@ -3,8 +3,8 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     fontFamily: {
-      suse: ["SUSE", "system-ui"],
-      ubuntu: ["Ubuntu", "system-ui"],
+      suse: ["SUSE"],
+      ubuntu: ["Ubuntu"],
     },
     extend: {},
   },
