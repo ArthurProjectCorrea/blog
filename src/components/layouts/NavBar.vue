@@ -5,18 +5,16 @@
             <h2 class="styleLogoH2">do Santa</h2>
             <!-- <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="75" height="" />  -->
         </div>
-        <div class="styleMenu">
-            <div class="styleMenuNavigation">
-                <RouterLink to="/">Início</RouterLink>
-                <RouterLink to="/about">Categorias</RouterLink>
-                <RouterLink to="/about">Sobre</RouterLink>
-                <RouterLink to="/about">Contato</RouterLink>
-            </div>
-            <div class="styleLogoButton">
-                <button>Pesquisar</button>
-                <button class="styleButtonSignIn">Entrar</button>
-                <button class="styleButtonSignUp">Registrar</button>
-            </div>
+        <div class="styleNavigation">
+            <RouterLink to="/">Início</RouterLink>
+            <RouterLink to="/about">Categorias</RouterLink>
+            <RouterLink to="/about">Sobre</RouterLink>
+            <RouterLink to="/about">Contato</RouterLink>
+        </div>
+        <div class="styleButton">
+            <button class="styleButtonSearch"><font-awesome-icon :icon="['fas', 'magnifying-glass']" /></button>
+            <button class="styleButtonSignIn">Entrar</button>
+            <button class="styleButtonSignUp">Registrar</button>
         </div>
     </nav>
 </template>
@@ -25,7 +23,7 @@ import { RouterLink } from "vue-router";
 </script>
 <style scoped>
 .styleMain {
-    @apply flex justify-between items-center  bg-gray-50  py-2 px-10
+    @apply flex justify-between items-center bg-gray-50 py-2 px-10
 }
 
 .styleLogo {
@@ -39,19 +37,28 @@ import { RouterLink } from "vue-router";
 .styleLogoH2 {
     @apply text-gray-950
 }
-.styleMenu{
-    @apply flex gap-6
+
+.styleMenu {
+    @apply flex justify-center items-center gap-6
 }
-.styleMenuNavigation{
+
+.styleNavigation {
+    @apply flex gap-4 text-gray-900 font-bold
+}
+
+.styleButton {
     @apply flex gap-2 text-gray-900
 }
-.styleLogoButton{
-    @apply flex gap-2 text-gray-900
+
+.styleButtonSearch {
+    @apply border-2 font-bold rounded-md border-green-600 text-green-600 hover:bg-green-600 hover:text-green-50 py-2 px-4
 }
-.styleButtonSignIn{
-    @apply border-2 font-bold rounded-sm border-green-600 text-green-600 hover:bg-green-600 hover:text-green-50 py-2 px-4
+
+.styleButtonSignIn {
+    @apply border-2 font-bold rounded-md border-green-600 text-green-600 hover:bg-green-600 hover:text-green-50 py-2 px-4
 }
-.styleButtonSignUp{
-    @apply border-2 font-bold rounded-sm border-green-600 bg-green-600 text-green-50 hover:bg-green-50 hover:text-green-600 py-2 px-4
+
+.styleButtonSignUp {
+    @apply border-2 font-bold rounded-md border-green-600 bg-green-600 text-green-50 hover:bg-green-50 hover:text-green-600 py-2 px-4
 }
 </style>
