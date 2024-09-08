@@ -51,14 +51,14 @@ import { RouterLink } from "vue-router";
 }
 
 .styleButtonSearch {
-    @apply border-2 font-bold rounded-md border-green-600 text-green-600 hover:bg-green-600 hover:text-green-50 py-2 px-4
+    @apply border font-bold rounded-md border-green-600 text-green-600 hover:bg-green-600 hover:text-green-50 py-2 px-4
 }
 
 .styleButtonSignIn {
-    @apply border-2 font-bold rounded-md border-green-600 text-green-600 hover:bg-green-600 hover:text-green-50 py-2 px-4
+    @apply border font-bold rounded-md border-green-600 text-green-600 hover:bg-green-600 hover:text-green-50 py-2 px-4
 }
 
 .styleButtonSignUp {
-    @apply border-2 font-bold rounded-md border-green-600 bg-green-600 text-green-50 hover:bg-green-50 hover:text-green-600 py-2 px-4
+    @apply border font-bold rounded-md border-green-600 bg-green-600 text-green-50 hover:bg-green-50 hover:text-green-600 py-2 px-4
 }
 </style>
