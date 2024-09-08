@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <NavBar/>
+  <div class="styleMain">
+    <NavBar />
     <RouterView />
   </div>
 </template>
@@ -8,4 +8,8 @@
 import { RouterView } from "vue-router";
 import NavBar from "./components/layouts/NavBar.vue";
 </script>
-<style scoped></style>
+<style scoped>
+.styleMain {
+  @apply font-ubuntu bg-gray-50 
+}
+</style>
