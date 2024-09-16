@@ -3,7 +3,7 @@
         <div class="styleLogo">
             <!-- <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="50" height="" />  -->
             <h1 class="styleLogo">Blog</h1>
-            <h2 class="styleLogo">do Santalucia</h2>
+            <h2 class="styleLogo">do Santa</h2>
         </div>
         <div class="styleNavigation">
             <RouterLink to="/" active-class="active">Início</RouterLink>
