@@ -10,12 +10,13 @@
             <RouterLink to="/categories" active-class="active">Categorias</RouterLink>
             <RouterLink to="/on" active-class="active">Sobre</RouterLink>
             <RouterLink to="/contact" active-class="active">Contato</RouterLink>
+            <RouterLink to="/users" active-class="active">User List</RouterLink>
         </div>
         <div class="styleButtons">
             <button class="clearButtonStyle buttonShape"><font-awesome-icon
                     :icon="['fas', 'magnifying-glass']" /></button>
-            <button class="clearButtonStyle buttonShape">Entrar</button>
-            <button class="darkButtonStyle buttonShape">Registrar</button>
+            <button class="clearButtonStyle buttonShape"><router-link to="/register">Register</router-link></button>
+            <button class="darkButtonStyle buttonShape"><router-link to="/login">Login</router-link></button>
         </div>
     </nav>
 </template>

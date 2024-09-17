@@ -1,11 +1,7 @@
 import { fileURLToPath, URL } from "node:url";
-
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 
-import Components from "unplugin-vue-components/vite";
-
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     vue(),
@@ -15,7 +11,10 @@ export default defineConfig({
       deep: true,
     }),
   ],
-  base: "/blog/",
+  base: "/",
+  build: {
+    outDir: "public", // Mude para gerar o build na pasta public
+  },
   resolve: {
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),
